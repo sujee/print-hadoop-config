@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="a.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="HADOOP_HOME/hadoop-core-1.2.1.jar"/>
+	<classpathentry kind="var" path="HBASE_HOME/hbase-0.94.0.jar"/>
+	<classpathentry kind="var" path="HBASE_HOME/lib/zookeeper-3.4.3.jar"/>
+	<classpathentry kind="var" path="ACCUMULO_HOME/lib/accumulo-core.jar"/>
+	<classpathentry kind="var" path="ACCUMULO_HOME/lib/accumulo-server.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
