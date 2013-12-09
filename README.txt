@@ -1,20 +1,21 @@
-This prints configuration of a Hadoop cluster.
-Extracted with thanks from Tom White's Hadoop book.
+Prints configuration of a Hadoop, HBase and Accumulo cluster.
 
-Edit compile.sh
-    set hadoop_home variable
+Hadoop configuration printer is extracted with thanks from Tom White's Hadoop book.
 
-compile
-    $ ./compile.sh
-this will create a jar file : a.jar
 
-Run using:
-    $  hadoop jar a.jar   config.ConfigurationPrinter | sort
-or
-    $  ./run.sh
+To compile
+    $ mvn package
+this will create a jar file : target/print-hadoop-config-VERSION.jar
 
-Example:
-    say we want to look for 'dfs.support.append' variable
+Running:
+    Edit env.sh file and set the environment variables.
 
-    $  ./run.sh  | grep dfs.support.append
+    Hadoop configuration:
+        $  ./hadoop-conf.sh
+
+    HBase configuration
+        $  ./hbase-conf.sh
+
+    Accumulo configuration
+        $  ./accumulo-conf.sh
 
