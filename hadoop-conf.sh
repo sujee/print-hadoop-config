@@ -2,4 +2,4 @@
 
 . ./env.sh
 
-$hadoop_home/bin/hadoop jar a.jar   config.HadoopConfig | sort
+$hadoop_home/bin/hadoop jar target/print-hadoop-config-*jar   config.HadoopConfig | sort
